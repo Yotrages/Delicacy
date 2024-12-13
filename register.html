@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Register</title>
+    <!-- Libraries Stylesheet -->
+<link href="lib/animate/animate.min.css" rel="stylesheet">
+<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+<link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+
+<!-- CSS FILES -->    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">                    
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<link href="css/bootstrap-icons.css" rel="stylesheet">
+
+<!-- <link href="css/sb-admin-2.css" rel="stylesheet"> -->
+
+<link href="css/style.css" rel="stylesheet">
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M24BBH8Z');</script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+<body style="background-color: #ccc;">
+
+    <div class="container-fluid nav-bar">
+        <div class="container">
+            <nav class="navbar navbar-light navbar-expand-lg py-4">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-primary fw-bold mb-0 navbar-brand">Deli<span class="text-dark">cacy</span> </h1>
+                </a>
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="event.html" class="nav-item nav-link">Events</a>
+                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                        <a href="login.html" class="nav-item nav-link">Login</a>
+                        <a href="register.html" class="nav-item nav-link">Sign Up</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Info</a>
+                            <div class="dropdown-menu bg-light">
+                                <a href="news.html" class="dropdown-item">Blog</a>
+                                <a href="news-detail.html" class="dropdown-item">News</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                    <div class="d-none d-lg-block">
+                        <button type="button" class="custom-btn btn nav-btn" data-bs-toggle="modal" data-bs-target="#BookingModal">Reservation</button>
+                    </div>        
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control bg-transparent p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+    <div class="container">
+        <div class="card o-hidden border-0 shadow-lg my-5">
+          <div class="card-body p-0">
+            <div class="row">
+              <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+              <div class="col-lg-7">
+                <div class="p-5">
+                  <header class="text-center mb-4">
+                    <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+                  </header>
+                  <main>
+                    <form class="user">
+                      <div class="form-group row mb-2">
+                        <div class="col-sm-6 mb-2 mb-sm-0">
+                          <label for="exampleFirstName" class="mb-1">First Name</label>
+                          <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="First Name" style="border-radius: 10rem; padding: 0.75rem 1rem; font-size: .8rem;">
+                        </div>
+                        <div class="col-sm-6">
+                          <label for="exampleLastName" class="mb-1">Last Name</label>
+                          <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Last Name" style="border-radius: 10rem; padding: 0.75rem 1rem; font-size: .8rem;">
+                        </div>
+                      </div>
+                      <div class="form-group mb-2">
+                        <label for="exampleInputEmail" class="mb-1">Email Address</label>
+                        <input type="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email Address" style="border-radius: 10rem; padding: 0.75rem 1rem; font-size: .8rem;">
+                      </div>
+                      <div class="form-group row mb-4">
+                        <div class="col-sm-6 mb-2 mb-sm-0">
+                          <label for="exampleInputPassword" class="mb-1">Password</label>
+                          <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" style="border-radius: 10rem; padding: 0.75rem 1rem; font-size: .8rem;">
+                        </div>
+                        <div class="col-sm-6">
+                          <label for="exampleRepeatPassword" class="mb-1">Repeat Password</label>
+                          <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Repeat Password" style="border-radius: 10rem; padding: 0.75rem 1rem; font-size: .8rem;">
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary btn-user btn-block" style="border-radius: 10rem; padding: 0.75rem 1rem; width: 100%; font-size: .85rem;">Register Account</button>
+                      <hr>
+                      <a href="index.html" class="btn btn-google btn-user btn-block" style="border-radius: 10rem; padding: 0.75rem 1rem; background-color: #ea4335; color: white; margin-bottom: 10px; width: 100%; font-size: .8rem;">
+                        <i class="fab fa-google fa-fw"></i> Register with Google
+                      </a>
+                      <a href="index.html" class="btn btn-facebook btn-user btn-block" style="border-radius: 10rem; padding: 0.75rem 1rem; background-color: #ff9800; color: white; width: 100%; font-size: .8rem;">
+                        <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
+                      </a>
+                    </form>
+                  </main>
+                  <footer>
+                    <hr>
+                    <div class="text-center mb-2">
+                      <a class="small" href="forgot-password.html">Forgot Password?</a>
+                    </div>
+                    <div class="text-center">
+                      <a class="small" href="login.html">Already have an account? Login!</a>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h1 class="text-primary navbar-brand">Deli<span class="text-warning">cacy</span></h1>
+                            <p class="lh-lg mb-4">There cursus massa at urnaaculis estieSed aliquamellus vitae ultrs condmentum leo massamollis its estiegittis miristum.</p>
+                            <div class="footer-icon d-flex mb-3">
+                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-primary btn-sm-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Special Facilities</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Cheese Burger</a>
+                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Sandwich</a>
+                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Panner Burger</a>
+                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Special Sweets</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Contact Us</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <p><i class="fa fa-map-marker-alt text-primary me-2"></i> 123 Street, New York, USA</p>
+                                <p><i class="fa fa-phone-alt text-primary me-2"></i> (+012) 3456 7890 123</p>
+                                <p><i class="fas fa-envelope text-primary me-2"></i> info@example.com</p>
+                                <p><i class="fa fa-clock text-primary me-2"></i> 26/7 Hours Service</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Social Gallery</h4>
+                            <div class="row g-2">
+                                <div class="col-4">
+                                     <img src="images/Menu/menu-01.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="images/Menu/menu-02.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="images/Menu/menu-03.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="images/Menu/menu-04.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="images/Menu/menu-05.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="images/Menu/menu-06.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Copyright Start -->
+        <div class="container-fluid bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center m-auto mb-3 mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>2024 Delicacy,</a> All right reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+    
+    
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+    
+        <!-- Modal -->
+        <div class="modal fade" id="BookingModal" tabindex="-1" aria-labelledby="BookingModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="mb-0">Reserve a table</h3>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body d-flex flex-column justify-content-center">
+                        <div class="booking">
+                            
+                            <form class="booking-form row" role="form" action="#" method="post">
+                                <div class="col-lg-6 col-12">
+                                    <label for="name" class="form-label">Full Name</label>
+
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
+                                </div>
+
+                                <div class="col-lg-6 col-12">
+                                    <label for="email" class="form-label">Email Address</label>
+
+                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="your@email.com" required>
+                                </div>
+
+                                <div class="col-lg-6 col-12">
+                                    <label for="Country" class="form-label">Country</label>
+                                    <select name="country" id="country" class="form-select form-control">
+                                        <option value="1" selected>USA</option>
+                                        <option value="2">UK</option>
+                                        <option value="3">India</option>
+                                        <option value="4">Nigeria</option>
+                                        <option value="5">China</option>
+                                        <option value="6">France</option>
+                                    </select>
+                                    
+                                </div>
+
+                                <div class="col-lg-6 col-12">
+                                    <label for="people" class="form-label">Number of persons</label>
+
+                                    <select name="person" id="person" class="form-select form-control">
+                                        <option value="1" selected>2</option>
+                                        <option value="2">5</option>
+                                        <option value="3">10</option>
+                                        <option value="4">15</option>
+                                        <option value="5">20</option>
+                                        <option value="6">25+</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-lg-6 col-12">
+                                    <label for="date" class="form-label">Date</label>
+
+                                    <input type="date" name="date" id="date" value="" class="form-control">
+                                </div>
+
+                                <div class="col-lg-6 col-12">
+                                    <label for="time" class="form-label">Time</label>
+
+                                    <select class="form-select form-control" name="time" id="time">
+                                      <option value="5" selected>5:00 PM</option>
+                                      <option value="6">6:00 PM</option>
+                                      <option value="7">7:00 PM</option>
+                                      <option value="8">8:00 PM</option>
+                                      <option value="9">9:00 PM</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Special Request</label>
+
+                                    <textarea class="form-control" rows="4" id="message" name="message" placeholder=""></textarea>
+                                </div>
+
+                                <div class="col-lg-4 col-12 ms-auto">
+                                    <button type="submit" class="form-control">Submit Request</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer"></div>
+                    
+                </div>
+                
+            </div>
+
+            <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M24BBH8Z"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+
+
+
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
